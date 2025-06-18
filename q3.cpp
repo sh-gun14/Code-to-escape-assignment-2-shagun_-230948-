@@ -1,5 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
+
 
 int findPeak(vector<int>& a) {
     int l = 0, r = a.size() - 1;
@@ -33,10 +32,3 @@ int bitonicSearch(vector<int>& a, int x) {
     return binarySearch(a, peak + 1, a.size() - 1, x, false);
 }
 
-int main() {
-    int n, x; cin >> n >> x;
-    vector<int> a(n);
-    for (int i = 0; i < n; ++i) cin >> a[i];
-    cout << bitonicSearch(a, x) << endl;
-    return 0;
-}
