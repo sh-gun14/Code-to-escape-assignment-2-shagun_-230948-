@@ -1,5 +1,4 @@
-#include <bits/stdc++.h>
-using namespace std;
+
 
 int searchInsert(vector<int>& a, int target) {
     int l = 0, r = a.size() - 1, ans = a.size();
@@ -15,11 +14,3 @@ int searchInsert(vector<int>& a, int target) {
     return ans;
 }
 
-int main() {
-    int n, target;
-    cin >> n >> target;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++) cin >> a[i];
-    cout << searchInsert(a, target) << endl;
-    return 0;
-}
